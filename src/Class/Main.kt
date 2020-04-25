@@ -31,4 +31,11 @@ fun main() {
     // copy
     val memberACopy = memberA.copy()
     println(memberA.equals(memberACopy))
+
+    // オブジェクト宣言 singletonが作れる
+    val obj = ObjectClass.getInstance()
+    println(obj)
+    // コンパニオンオブジェクト staticなメソッドを使用できる
+    val companionObj = CompanionObject.staticMethod()
+    println(companionObj::class)
 }
